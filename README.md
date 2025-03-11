@@ -17,7 +17,7 @@ def react(update: Update, context: CallbackContext):
     else:
         update.message.reply_text("👍 Recebido!")
 
-updater = Updater(TOKEN, use_context=True)
+updater = (Updater7937825193:AAEQugjec6S67qdRpFIw0srhEDYIBdSPMmM, use_context=True)
 dp = updater.dispatcher
 dp.add_handler(CommandHandler("start", start))
 dp.add_handler(MessageHandler(Filters.text & ~Filters.command, react))
